@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h2>반복문을 사용한 구구단 연급</h2>
+  <script>
+    var strn = prompt("몇 단을 출력할까요?");
+    var n = Number(strn);
+
+    var i = 1;
+
+    while (i <= 9) {
+      document.write(n + " * " + i + " = " + n * i + "<br>");
+      i++;
+    }
+
+    // do {
+    //   document.write(n + " * " + i + " = " + n * i + "<br>");
+    // } while (i <= 9)
+  </script>
+
+</body>
+
+</html>
