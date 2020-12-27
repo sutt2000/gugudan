@@ -11,21 +11,26 @@
   <h1>구구단 전체 출력</h1>
   <script>
     var result = []
-    var n = 3;
-    //calculate
-    for (var i = 1; i <= 9; i++) {
-      result[i] = n * i;
-    }
-    //print
-    for (var i = 1; i <= 9; i++) {
-      var str = "";
-      str += n;
-      str += " x ";
-      str += i;
-      str += " = ";
-      str += result[i];
-      document.write(str + "<br>");
-    }
+    for (var n = 2; n <= 9; n++) {
+      //calculate
+
+      for (var i = 1; i <= 9; i++) {
+        result[i] = n * i;
+      }
+
+      document.write(`<h2>${n}단<h2>`);
+      //print
+      for (var j = 1; j <= 9; j++) {
+        var str = "";
+        str += n;
+        str += " x ";
+        str += j;
+        str += " = ";
+        str += result[j];
+        document.write(str + "<br>");
+      }
+
+    } 
   </script>
 </body>
 
